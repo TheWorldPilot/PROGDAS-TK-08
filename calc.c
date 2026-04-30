@@ -37,6 +37,18 @@ int main()
             break;
 
             // Division
+        case 4:
+            printf("Input angka 1:");
+            scanf("%f", &input1);
+            printf("Input angka 2: ");
+            scanf("%f", &input2);
+            result = input1 / input2;
+            printf("Hasil pembagian : %.2f", result);
+            break;
+
+        default:
+            printf("Input opsi yange benar!");
+            break;
 
             return 0;
     }
