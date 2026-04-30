@@ -23,7 +23,14 @@ int main() {
 		printf("Hasil penjumlahan : %.2f", result);
 		break;
 	//Subtraction
-
+    case 2:
+		printf("Input angka 1: ");
+		scanf("%f", &input1);
+		printf("Input angka 2: ");
+                scanf("%f", &input1); 
+		result = input1-input2;
+		printf("Hasil penjumlahan : %.2f", result);
+		break;
 	//Multiplication
 
 	//Division
