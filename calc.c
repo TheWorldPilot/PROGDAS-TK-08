@@ -4,13 +4,13 @@ int main() {
 	int n;
 	float input1, input2, result;
 	
-	printf("Apa operasi yang ada ingin lakukan?"\n);
-	printf("1. Penjumlahan"\n);
-	printf("2. Pengurangan"\n);
-	printf("3. Perkalian"\n);
-	printf("4. Pembagian"\n);
+	printf("Daftar Operasi\n");
+	printf("1. Penjumlahan\n");
+	printf("2. Pengurangan\n");
+	printf("3. Perkalian\n");
+	printf("4. Pembagian\n");
 	printf("Apa operasi yang ada ingin lakukan? ");
-	scanf("%f", &n);
+	scanf("%d", &n);
 	
 	switch (n){
 	//Addition
@@ -18,9 +18,9 @@ int main() {
 		printf("Input angka 1: ");
 		scanf("%f", &input1);
 		printf("Input angka 2: ");
-                scanf("%f", &input1); 
+        scanf("%f", &input1); 
 		result = input1+input2;
-		printf("Hasil penjumlahan : %.2f", result);
+		printf("Hasil penjumlahan : %.2f\n", result);
 		break;
 
 	//Subtraction
@@ -28,34 +28,34 @@ int main() {
 		printf("Input angka 1: ");
 		scanf("%f", &input1);
 		printf("Input angka 2: ");
-                scanf("%f", &input1); 
+        scanf("%f", &input1); 
 		result = input1-input2;
-		printf("Hasil penjumlahan : %.2f", result);
+		printf("Hasil penjumlahan : %.2f\n", result);
 		break;
 
 	//Multiplication
-        case 3:
-            printf("Input angka 1:");
-            scanf("%f", &input1);
-            printf("Input angka 2: ");
-            scanf("%f", &input2);
-            result = input1 * input2;
-            printf("Hasil perkalian : %.2f", result);
-            break;
+    case 3:
+        printf("Input angka 1:");
+        scanf("%f", &input1);
+        printf("Input angka 2: ");
+        scanf("%f", &input2);
+        result = input1 * input2;
+        printf("Hasil perkalian : %.2f\n", result);
+        break;
+        // Division
+    
+	case 4:
+        printf("Input angka 1:");
+        scanf("%f", &input1);
+        printf("Input angka 2: ");
+        scanf("%f", &input2);
+        result = input1 / input2;
+        printf("Hasil pembagian : %.2f\n", result);
+        break;
 
-            // Division
-        case 4:
-            printf("Input angka 1:");
-            scanf("%f", &input1);
-            printf("Input angka 2: ");
-            scanf("%f", &input2);
-            result = input1 / input2;
-            printf("Hasil pembagian : %.2f", result);
-            break;
-
-        default:
-            printf("Input opsi yange benar!");
-            break;
-
-            return 0;
+    default:
+        printf("Input opsi yange benar!\n");
+        break;
     }
+    return 0;
+}
