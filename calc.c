@@ -18,7 +18,7 @@ int main() {
 		printf("Input angka 1: ");
 		scanf("%f", &input1);
 		printf("Input angka 2: ");
-        scanf("%f", &input1); 
+        scanf("%f", &input2); 
 		result = input1+input2;
 		printf("Hasil penjumlahan : %.2f\n", result);
 		break;
@@ -28,9 +28,9 @@ int main() {
 		printf("Input angka 1: ");
 		scanf("%f", &input1);
 		printf("Input angka 2: ");
-        scanf("%f", &input1); 
+        scanf("%f", &input2); 
 		result = input1-input2;
-		printf("Hasil penjumlahan : %.2f\n", result);
+		printf("Hasil pengurangan : %.2f\n", result);
 		break;
 
 	//Multiplication
